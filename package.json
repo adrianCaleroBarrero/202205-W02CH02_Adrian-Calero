@@ -1,0 +1,49 @@
+{
+  "name": "202205-w02ch02_adrian-calero",
+  "version": "1.0.0",
+  "description": "Challenge en parejas.​Crea un modulo con funciones que repliquen, sin utilizar ninguno de los métodos ya existentes en el prototipo, los siguientes métodos de array: length, push, pop, unshift, shift, some, every, find, filter, map, findIndex, includes, indexOf, reduce, join.ç\r Cualquiera de tus funciones puede usar las que ya hayas creado.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint",
+    "test:watch": "jest --watchAll",
+    "test:cov": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrianCaleroBarrero/202205-W02CH02_Adrian-Calero.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrianCaleroBarrero/202205-W02CH02_Adrian-Calero/issues"
+  },
+  "homepage": "https://github.com/adrianCaleroBarrero/202205-W02CH02_Adrian-Calero#readme",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.17.12",
+    "eslint": "^8.15.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jest": "^26.2.2",
+    "jest": "^28.1.0"
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "env": {
+    "jest/globals": true
+  },
+  "plugins": [
+    "jest"
+  ],
+  "babel": {
+    "env": {
+      "test": {
+        "plugins": [
+          "@babel/plugin-transform-modules-commonjs"
+        ]
+      }
+    }
+  }
+}
