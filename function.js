@@ -10,7 +10,13 @@ export function pop(array) {
     array.length = long - 1;
     return popped;
 }
-// const array = [1, 5, 8];
-// pop(array);
 
-// console.log(array);
+export function shift(array) {
+    if (array.length === 0) {
+        return undefined;
+    }
+
+    const result = array[0];
+
+    return result;
+}
