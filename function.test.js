@@ -12,16 +12,17 @@ describe('Given the function pop', () => {
     describe('When receive a normal array', () => {
         test('Then should be length - 1 ', () => {
             const normalArr = [1, 2, 3];
-            pop(normalArr);
+            const result = pop(normalArr);
 
             expect(normalArr).toContain(1, 2);
+            expect(result).toBe(3);
         });
     });
     describe('When receive a string', () => {
         test('Then should be Error', () => {
             const string = 'pepe';
-            pop(string);
-            expect(() => throw new Error()).toThrow();
+
+            expect(() => pop(string)).toThrow();
         });
     });
 });
