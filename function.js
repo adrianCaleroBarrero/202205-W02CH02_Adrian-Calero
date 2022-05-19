@@ -15,6 +15,9 @@ export function shift(array) {
     if (array.length === 0) {
         return undefined;
     }
+    array.forEach(element => {
+        array.indexOf(element) = array.indexOf(element- 1);
+    });
 
     const result = array[0];
 
